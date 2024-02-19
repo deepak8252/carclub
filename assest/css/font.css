@@ -1,0 +1,137 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+
+:root{
+    --primary:rgb(226, 116, 38);
+    --white:white;
+    --gray:gray;
+    --secondary:rgba(226,116,38,.8);
+    --dark:rgba(1, 45, 72, 0.9);
+}
+.icon{
+    color: var(--primary) !important;
+}
+.f-bold{
+    font-weight: 600;
+}
+.radius{
+    border-radius: 20px;
+}
+.b-none{
+    border: none;
+}
+.icon-green{
+    color: green;
+}
+.text-cap{
+    text-transform: capitalize;
+}
+a{
+    text-decoration: none;
+    
+}
+p,h1,h2,h3,h5,h4,h6{
+    text-transform: capitalize;
+}
+p{
+    color: var(--gray);
+    text-align: justify;
+}
+.heading h3{
+    margin: 30px 0px;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 2.4rem;
+    text-align: center;
+    position: relative;
+}
+.heading h3::before{
+    content: "";
+    position: absolute;
+    width: 100px ;
+    height: 1px;
+    text-align: center;
+    background-color: gray;
+    bottom: -5px;
+    left: 45%;
+}
+.heading h3::after{
+    content: "";
+    position: absolute;
+    width: 10px ;
+    height: 10px;
+    text-align: center;
+    background-color:var(--primary);
+    bottom: -8px;
+    left: 48%;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+.subheading h4{
+    margin: 10px 0px;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 1.4rem;
+    text-align: center;
+    position: relative;
+}
+@media screen and(max-width:799px) {
+   
+}
+.subheading h4::before{
+    content: "";
+    position: absolute;
+    width: 100px ;
+    height: 1px;
+    text-align: center;
+    background-color: gray;
+    bottom: -5px;
+    left: 40%;
+}
+.subheading h4::after{
+    content: "";
+    position: absolute;
+    width: 10px ;
+    height: 10px;
+    text-align: center;
+    background-color:var(--primary);
+    bottom: -8px;
+    left: 50%;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+.text-sm{
+    font-size: 15px !important;
+}
+.line-h{
+    line-height: 3rem;
+}
+.btn-container .btn{
+    background-color: var(--primary) !important;
+    color: white;
+    font-size: 1.4rem;
+    text-transform: capitalize;
+    padding: 5px 2.4rem;
+    transition: all .4s ease-in-out;
+    outline: none;
+    border: none;
+    font-weight: 400 !important;
+}
+.btn-container .btn:hover{
+    opacity: .8;
+}
+.overlay{
+    background-color: gray;
+    overflow: hidden;
+}
+ul{
+    list-style: none;
+}
+.active1{
+    color: white ;
+    background-color:var(--primary) !important ;
+}
