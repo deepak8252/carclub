@@ -25,6 +25,9 @@
         content: "";
         display: none;
     }
+    .mapimg{
+        width: 300px !important;
+    }
 }
 @media screen and (max-width:978px) {
      .pickup{
